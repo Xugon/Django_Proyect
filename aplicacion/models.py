@@ -11,7 +11,7 @@ class Tareas (models.Model):
     title =models.CharField(max_length=200)
     description = models.TextField()
     project = models.ForeignKey(Project, on_delete=models.CASCADE)
-    done =models.BooleanField (default=False)
+    done = models.BooleanField (default= False) # type: ignore
 
     def __str__(self):
-        return self.title + "-" + self.project.name
+        return self.title + "-" + self.project.name # type: ignore
