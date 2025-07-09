@@ -1,5 +1,6 @@
 # Django_Proyecto
 
+Autor Guxo
 A personal Django project demonstrating basic usage of Django models, views, and templates. This project includes a simple task and project management app.
 
 ## Features
