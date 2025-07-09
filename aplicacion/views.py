@@ -20,14 +20,14 @@ def variablehola (request,username):
 
 def projects(request):
     #projects = list(Project.objects.values())
-    projects = Project.objects.all()
+    projects = Project.objects.all() # type: ignore
     return render(request, "projects.html",{
         "projects" : projects
     })
 
 def tareas(request):
     # tarea = Tareas.objects.get(title=title)
-    tareas = Tareas.objects.all()
+    tareas = Tareas.objects.all() # type: ignore
     return render(request, "tareas.html",{
         "tareas" : tareas
     })    
